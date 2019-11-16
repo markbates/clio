@@ -23,7 +23,7 @@ build:
 	make tidy
 
 test:
-	rm pkged.go
+	pkger
 	$(GO_BIN) test -cover -tags ${TAGS} ./...
 	make tidy
 
