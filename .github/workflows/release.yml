@@ -3,6 +3,7 @@ on:
   push:
     tags:
       - v1.*
+      - v0.*
 
 jobs:
   release:
