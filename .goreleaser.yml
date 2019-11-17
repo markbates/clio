@@ -20,11 +20,9 @@ changelog:
     exclude:
       - '^docs:'
       - '^test:'
-<%= if (brew) { %>
 brews:
 -
   name: homebrew-tap
   github:
     owner: markbates
     name: homebrew-tap
-<% } %>
