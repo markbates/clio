@@ -25,6 +25,6 @@ jobs:
       run: |
         echo ${{secrets.GITHUB_TOKEN}}
         go get github.com/markbates/pkger/cmd/pkger
-        go get github.com/gobuffalo/releaser
+        go get github.com/gobuffalo/release
         go mod tidy -v
         release -y -f version.go --skip-packr
