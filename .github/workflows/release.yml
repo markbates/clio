@@ -23,7 +23,6 @@ jobs:
 
     - name: Release
       run:
-        - echo ${{secrets.GITHUB_TOKEN}}
         - go get github.com/markbates/pkger/cmd/pkger
         - go mod tidy -v
         - release -y -f version.go --skip-packr
