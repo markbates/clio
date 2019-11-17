@@ -1,0 +1,27 @@
+name: Release
+on:
+    push:
+        branches:
+            - master
+        tags:
+            -v1*
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Set up Go 1.13
+      uses: actions/setup-go@v1
+      with:
+        go-version: 1.13
+      id: go
+
+    - name: Check out code into the Go module directory
+      uses: actions/checkout@v1
+
+    - name: Release
+      run:
+        - go get github.com/markbates/pkger/cmd/pkger
+        - go mod tidy -v
+        - release -y -f version.go --skip-packr

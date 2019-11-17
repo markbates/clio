@@ -1,4 +1,4 @@
-name: Go
+name: Tests
 on: [push]
 jobs:
 
@@ -18,7 +18,7 @@ jobs:
 
     - name: Test
       run: go test -v -race ./...
-      
+
   mac-test:
     name: MacOS
     runs-on: macOS-latest
