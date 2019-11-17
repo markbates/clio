@@ -36,7 +36,7 @@ jobs:
     - name: Test
       run: go test -v -race ./...
 
-windows-test:
+  windows-test:
     name: Windows
     runs-on: windows-latest
     steps:
