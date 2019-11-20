@@ -1,7 +1,7 @@
 before:
   hooks:
     - 'go mod tidy'
-    - "awk \"{gsub(/\"Version\"/\"foo\"/)}1\" version.go"
+    - "awk \"{gsub(/\"Version\"/\"foo\"/)}1\" version.go > version.go"
 builds:
   -
     main: ./cmd/clio/main.go
