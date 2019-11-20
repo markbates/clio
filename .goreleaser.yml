@@ -6,6 +6,8 @@ builds:
     main: ./cmd/clio/main.go
     env:
       - CGO_ENABLED=0
+    ldflags:
+     - -s -w -X clio.Version={{.Version}}
 archives:
   -
     replacements:
