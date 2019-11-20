@@ -24,12 +24,11 @@ changelog:
     exclude:
       - '^docs:'
       - '^test:'
-brews:
-  -
-    name: 'clio'
-    github:
-      owner: 'markbates'
-      name: 'homebrew-tap'
-    install: |
-      bin.install "clio"
+brew:
+  name: 'clio'
+  github:
+    owner: 'markbates'
+    name: 'homebrew-tap'
+  install: |
+    bin.install "clio"
 
