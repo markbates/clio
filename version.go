@@ -1,4 +1,4 @@
 package clio
 
 // Version of clio
-const Version = "development"
+var Version = "development"
