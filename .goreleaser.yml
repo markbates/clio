@@ -26,8 +26,8 @@ changelog:
       - '^test:'
 brews:
   -
-    name: '{{ .opts.BrewTap }}'
+    name: 'clio'
     github:
-      owner: '{{ .opts.BrewOwner }}'
-      name: '{{ .opts.BrewTap }}'
+      owner: 'markbates'
+      name: 'clio'
 
