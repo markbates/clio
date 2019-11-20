@@ -7,7 +7,7 @@ builds:
     env:
       - CGO_ENABLED=0
     ldflags:
-     - -s -w -X clio.Version={{.Version}}
+     - -X clio.Version={{.Version}}
 archives:
   -
     replacements:
