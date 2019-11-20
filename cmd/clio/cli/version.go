@@ -1,3 +1,5 @@
 package cli
 
-const Version = "v0.0.1"
+import "github.com/markbates/clio"
+
+const Version = clio.Version

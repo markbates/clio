@@ -1,12 +1,13 @@
 before:
   hooks:
     - 'go mod tidy'
-    - "awk \"{gsub(/\"Version\"/\"foo\"/)}1\" version.go > version.go"
 builds:
   -
     main: ./cmd/clio/main.go
     env:
       - CGO_ENABLED=0
+    ldflags:
+      - -s -w -X "github.com/markbates/clio.Version={{.Version}}"
 archives:
   -
     replacements:
