@@ -6,7 +6,6 @@ builds:
     main: ./cmd/clio/main.go
     env:
       - CGO_ENABLED=0
-      - GORELEASER_GITHUB_TOKEN=${{secrets.GORELEASER_GITHUB_TOKEN}}
 archives:
   -
     replacements:
