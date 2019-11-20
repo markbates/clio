@@ -29,5 +29,5 @@ brews:
     name: 'clio'
     github:
       owner: 'markbates'
-      name: 'clio'
+      name: 'homebrew-tap'
 
