@@ -6,9 +6,8 @@ builds:
     main: ./cmd/clio/main.go
     env:
       - CGO_ENABLED=0
-    ldflags:
-     - -s -w -X github.com/markbates/clio.Version={{.Version}}
-     - ./usemsan=-msan
+    flags:
+     - -ldflags="-s -w -X github.com/markbates/clio.Version={{.Version}}"
 archives:
   -
     replacements:
