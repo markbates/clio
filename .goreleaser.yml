@@ -7,7 +7,7 @@ builds:
     env:
       - CGO_ENABLED=0
     ldflags:
-     - -X github.com/markbates/clio.Version={{.Version}}
+     - -s -w -X github.com/markbates/clio.Version={{.Version}}
 archives:
   -
     replacements:
