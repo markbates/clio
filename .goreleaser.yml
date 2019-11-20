@@ -30,4 +30,6 @@ brews:
     github:
       owner: 'markbates'
       name: 'homebrew-tap'
+    install: |
+      bin.install "clio"
 
