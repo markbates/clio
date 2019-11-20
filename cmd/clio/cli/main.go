@@ -5,6 +5,7 @@ import (
 	"flag"
 	"fmt"
 
+	"github.com/markbates/clio"
 	"github.com/markbates/clio/cmd/internal/cmdx"
 )
 
@@ -26,7 +27,7 @@ func Main(ctx context.Context, args []string) error {
 
 	stdout := cmdx.Stdout(ctx)
 	if opts.version {
-		fmt.Fprintln(stdout, Version)
+		fmt.Fprintln(stdout, clio.Version)
 		return nil
 	}
 
