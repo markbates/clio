@@ -5,10 +5,11 @@ import (
 	"flag"
 	"fmt"
 
+	"github.com/markbates/clio"
 	"github.com/markbates/clio/cmd/internal/cmdx"
 )
 
-var Version = "development"
+var Version = clio.Version
 
 func Main(ctx context.Context, args []string) error {
 	opts := struct {
