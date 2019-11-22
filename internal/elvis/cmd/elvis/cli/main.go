@@ -5,8 +5,11 @@ import (
 	"flag"
 	"fmt"
 
+	"github.com/costello/elvis"
 	"github.com/costello/elvis/cmd/internal/cmdx"
 )
+
+var Version = elvis.Version
 
 func Main(ctx context.Context, args []string) error {
 	opts := struct {
