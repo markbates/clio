@@ -2,7 +2,7 @@ name: Tests
 on: [push]
 jobs:
 
-  "1.13 tests":
+  tests-113:
     name: ${{matrix.os}} Tests (1.13)
     runs-on: ${{ matrix.os }}
     strategy:
@@ -24,7 +24,7 @@ jobs:
         go mod tidy -v
         go test -race ./...
 
-  "1.12 tests":
+  tests-112:
     name: ${{matrix.os}} Tests (1.12)
     runs-on: ${{ matrix.os }}
     strategy:
